@@ -15,3 +15,11 @@ Benefits
 Speed : because of 
 - Directed acyclic graph
 - query optimizer 
+
+
+```mermaid
+graph TD
+    A[Start] --> B{Is it working?}
+    B -->|Yes| C[Don't touch it]
+    B -->|No| D[Fix it]
+    D --> B
