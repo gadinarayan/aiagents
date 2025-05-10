@@ -1,6 +1,4 @@
-This repo has details of my experiments with 
+This repo has details of my experiments with GenAI and AI Agents
 
-AI Agents
-GenAI
-Spark
+- using GenAI with timeseries data
 
