@@ -39,7 +39,15 @@ What if there is a foundation model trained on time series data with various pat
 
 1. IBM Granite TinyTimeMixer (TTM) model
 2. TimesFM : Time Series Foundation Model by Google research
-3. TimeGPT-1 : 
+3. TimeGPT-1 : by by Nixtla, an AI startup specializing in time series forecasting and anomaly detection
+
+Let us see how to use them 
+
+1. pip install "granite-tsfm[notebooks]==0.2.23"
+2. clone or copy the code present at 
+
+
+
 
 
 
