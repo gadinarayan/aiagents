@@ -10,7 +10,7 @@ from tsfm_public.toolkit.visualization import plot_predictions
 
 DATA_FILE_PATH = "energy_dataset.csv"
 
-timestamp_column = "time"
+timestamp_column = "timestamp"
 target_columns = ["total load actual"]
 context_length = 512
 
@@ -30,10 +30,10 @@ input_df = input_df.iloc[-context_length:,]
 # Show the last few rows of the dataset.
 print(input_df.head(2))
 
-#fig, axs = plt.subplots(len(target_columns), 1, figsize=(10, 2 * len(target_columns)), squeeze=False)
-#for ax, target_column in zip(axs, target_columns):
-#    ax[0].plot(input_df[timestamp_column], input_df[target_column])
-#    plt.show()
+fig, axs = plt.subplots(len(target_columns), 1, figsize=(10, 2 * len(target_columns)), squeeze=False)
+for ax, target_column in zip(axs, target_columns):
+    ax[0].plot(input_df[timestamp_column], input_df[target_column])
+    plt.show()
 
 print ("completed")
 
